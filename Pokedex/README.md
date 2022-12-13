@@ -1,1 +1,2 @@
-Projeto DIO JavaScript PokeDex.
+# DIO💻🔵🛠
+Projeto DIO Pokedex em JavaScript 👲🏻🔴
