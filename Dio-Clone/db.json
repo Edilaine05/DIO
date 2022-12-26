@@ -1,0 +1,43 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Edilaine",
+      "email": "edilain@email.com",
+      "password": "123456"
+    },
+    {
+      "id": 2,
+      "name": "emerson",
+      "email": "emerson@email.com",
+      "password": "123456"
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "id": 9
+    },
+    {
+      "id": 10
+    },
+    {
+      "id": 11
+    }
+  ]
+}
