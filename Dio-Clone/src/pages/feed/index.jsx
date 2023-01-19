@@ -4,7 +4,7 @@ import { UserInfo } from '../../components/UserInfo';
 
 import { Header } from '../../components/Header';
 
-import { Container, Column, Title, TitleHighlight } from '../feed/styled';
+import { Container, Column, Title, TitleHighlight } from './styles';
 
 const Feed = () => {
   return (

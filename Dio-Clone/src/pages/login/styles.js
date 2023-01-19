@@ -32,7 +32,7 @@ export const Row = styled.div`
 
 
 export const Title = styled.h2`
-    font-family: 'Open Sans';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -44,7 +44,7 @@ export const Title = styled.h2`
 `
 
 export const TitleLogin = styled.p`
-    font-family: 'Open Sans';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -53,7 +53,7 @@ export const TitleLogin = styled.p`
 `
 
 export const SubtitleLogin = styled.p`
-    font-family: 'Open Sans';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -63,7 +63,7 @@ export const SubtitleLogin = styled.p`
 
 
 export const EsqueciText  = styled.p`
-    font-family: 'Open Sans';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -73,7 +73,7 @@ export const EsqueciText  = styled.p`
 ` 
 
 export const CriarText =  styled.a`
-    font-family: 'Open Sans';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;

@@ -10,7 +10,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
 
 
-import { Container, Title, Column, TitleSignUp, SubtitleSignUp, InfoText, Row, Wrapper,SingUpText,TextBtn } from '../signup/styled';
+import { Container, Title, Column, TitleSignUp, SubtitleSignUp, InfoText, Row, Wrapper,SingUpText,TextBtn } from './styles';
 
 
 const schema = yup.object({

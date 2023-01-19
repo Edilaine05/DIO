@@ -31,7 +31,7 @@ export const Row = styled.div`
 
 
 export const Title = styled.h2`
-    font-family: 'Open Sans';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -43,7 +43,7 @@ export const Title = styled.h2`
 `
 
 export const TitleSignUp = styled.p`
-    font-family: 'Open Sans';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -52,7 +52,7 @@ export const TitleSignUp = styled.p`
 `
 
 export const SubtitleSignUp = styled.p`
-    font-family: 'Open Sans';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -62,7 +62,7 @@ export const SubtitleSignUp = styled.p`
 
 
 export const EsqueciText  = styled.p`
-    font-family: 'Open Sans';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -72,7 +72,7 @@ export const EsqueciText  = styled.p`
 ` 
 
 export const CriarText =  styled.p`
-    font-family: 'Open Sans';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -81,7 +81,7 @@ export const CriarText =  styled.p`
     color: #23DD7A;
 `
 export const InfoText  = styled.p`
-    font-family: 'Open Sans';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -90,21 +90,26 @@ export const InfoText  = styled.p`
 ` 
 
 export const SingUpText =  styled.p`
-    font-family: 'Open Sans';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 19px;
     margin: 10px;
     color: #FFFFFF;
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
+    min-inline-size: fit-content;
 `
-export const TextBtn =  styled.p`
-    font-family: 'Open Sans';
+export const TextBtn =  styled.a`
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 19px;
     margin: 10px;
     color: #23DD7A;
-    flex-direction: row;`
+    display: flex;
+    flex-direction: column;
+    min-inline-size: fit-content;
+    text-decoration: none;`
