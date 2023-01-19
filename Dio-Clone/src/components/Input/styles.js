@@ -26,7 +26,7 @@ export const InputText = styled.input`
 export const ErrorText = styled.p`
     color: #ff0000;
     font-size: 12px;
-    font-family: 'Open Sans';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     margin: 5px 0;
     padding-bottom: 5px;

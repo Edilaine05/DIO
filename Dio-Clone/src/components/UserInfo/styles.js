@@ -15,7 +15,7 @@ export const UserPicture = styled.img`
 `
 
 export const NameText = styled.div`
-    font-family: 'Open Sans';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;

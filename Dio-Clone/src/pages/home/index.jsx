@@ -5,7 +5,7 @@ import { Button } from '../../components/Button';
 
 import { Header } from '../../components/Header';
 
-import { Container, Title, TitleHighlight, TextContent } from './styles';
+import { Container, Title, TitleHighlight, TextContent } from '../home/styled';
 
 const Home = () => {
 

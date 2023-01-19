@@ -1,7 +1,7 @@
 import React from 'react'
 import { Controller } from "react-hook-form";
 
-import {InputContainer, InputText, IconContainer, ErrorText } from './styles';
+import {InputContainer, InputText, IconContainer, ErrorText } from '../Input/styles';
 
 const Input = ({leftIcon, name, control,errorMessage, ...rest}) => {
 

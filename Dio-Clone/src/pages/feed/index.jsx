@@ -4,7 +4,7 @@ import { UserInfo } from '../../components/UserInfo';
 
 import { Header } from '../../components/Header';
 
-import { Container, Column, Title, TitleHighlight } from './styles';
+import { Container, Column, Title, TitleHighlight } from '../feed/styled';
 
 const Feed = () => {
   return (
@@ -25,11 +25,12 @@ const Feed = () => {
                 <Card />
             </Column>
             <Column flex={1}>
-              <TitleHighlight> # RANKING 5 TOP DA SEMANA </TitleHighlight>
-                <UserInfo nome="Pablo Henrique" image="https://avatars.githubusercontent.com/u/45184516?v=" percentual={25}/>
-                <UserInfo nome="Pablo Henrique" image="https://avatars.githubusercontent.com/u/45184516?v=" percentual={65}/>
-                <UserInfo nome="Pablo Henrique" image="https://avatars.githubusercontent.com/u/45184516?v=" percentual={45}/>
-                <UserInfo nome="Pablo Henrique" image="https://avatars.githubusercontent.com/u/45184516?v=" percentual={72}/>
+              <TitleHighlight> # RANKING TOP 5 DA SEMANA </TitleHighlight>
+                <UserInfo nome="Edilaine Martins" image="https://avatars.githubusercontent.com/u/116959329?s=96&v=4" percentual={25}/>
+                <UserInfo nome="Edilaine Martins" image="https://avatars.githubusercontent.com/u/116959329?s=96&v=4" percentual={40}/>
+                <UserInfo nome="Edilaine Martins" image="https://avatars.githubusercontent.com/u/116959329?s=96&v=4" percentual={57}/>
+                <UserInfo nome="Edilaine Martins" image="https://avatars.githubusercontent.com/u/116959329?s=96&v=4" percentual={5}/>
+                <UserInfo nome="Edilaine Martins" image="https://avatars.githubusercontent.com/u/116959329?s=96&v=4" percentual={99}/>
             </Column>
         </Container>
     </>

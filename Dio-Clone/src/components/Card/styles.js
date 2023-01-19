@@ -29,7 +29,7 @@ export const UserInfo = styled.div`
     }
 
     h4{
-        font-family: 'Open Sans';
+        font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: 700;
         font-size: 18px;
@@ -38,7 +38,7 @@ export const UserInfo = styled.div`
     }
 
     p {
-        font-family: 'Open Sans';
+        font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 12px;
@@ -59,7 +59,7 @@ export const PostInfo = styled.div`
     margin-bottom: 12px;
 
     h4{
-        font-family: 'Open Sans';
+        font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: 700;
         font-size: 18px;
@@ -68,7 +68,7 @@ export const PostInfo = styled.div`
     }
 
     p {
-        font-family: 'Open Sans';
+        font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 12px;
@@ -80,7 +80,7 @@ export const HasInfo = styled.div`
     margin-top: 12px;
 
     h4{
-        font-family: 'Open Sans';
+        font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: 700;
         font-size: 12px;
@@ -89,7 +89,7 @@ export const HasInfo = styled.div`
     }
 
     p {
-        font-family: 'Open Sans';
+        font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: 700;
         font-size: 16px;

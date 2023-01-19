@@ -1,4 +1,4 @@
-import { useNavigate  } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { MdEmail, MdLock, MdPerson } from 'react-icons/md';
 import { Button } from '../../components/Button';
 import { Header } from '../../components/Header';
@@ -10,10 +10,12 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
 
 
-import { Container, Title, Column, TitleSignUp, SubtitleSignUp, InfoText, Row, Wrapper,SingUpText,TextBtn } from './styles';
+import { Container, Title, Column, TitleSignUp, SubtitleSignUp, InfoText, Row, Wrapper,SingUpText,TextBtn } from '../signup/styled';
+
 
 const schema = yup.object({
     email: yup.string().email('Email invalido').required('Campo obrigatório'),
+    name: yup.string().min(3, 'No minimo 3 caracters').required('Campo obrigatório'),
     password: yup.string().min(4, 'No minimo 4 caracters').required('Campo obrigatório'),
    
   }).required();
@@ -21,36 +23,28 @@ const schema = yup.object({
 const SignUp = () => {
 
     const navigate = useNavigate()
-    const handleClickSignIn = () => {
-        navigate('/feed')
-    }
+   
+        
+   
 
-    const { control, handleSubmit, formState: { errors  } } = useForm({
-        
+    const { control, handleSubmit, register, formState: { errors  } } = useForm({
         resolver: yupResolver(schema),
-        
-        mode: 'onChange',
+        mode: 'onChange',  
+       
     });
 
-    const onSubmit = async (formData) => {
-        try{
-            const {data} = await api.get(`/users?email=${formData.email}&password=${formData.password}`);
+    const onSubmit = function (e) {
+        e.preventDefault();
+        api.post('http://localhost:8001/users').then((response) => {
             
-            if(data.length && data[0].id){
-                navigate('/feed') 
-                return
-            }else{
-                
-            alert('Usuário ou password inválido')
-            }
+        navigate('/login')
             
+          });;
 
-        }catch(e){
-            alert('Houve um erro. Tente novamente.')
-        }
+        console.log(e);
     };
 
-    console.log('errors', errors);
+    
 
     return (<>
         <Header />
@@ -64,18 +58,18 @@ const SignUp = () => {
                 <TitleSignUp>Comece agora grátis</TitleSignUp>
                 <SubtitleSignUp>Criesua conta e make the change._</SubtitleSignUp>
                 <form onSubmit={handleSubmit(onSubmit)}>
-                    
-                    <Input placeholder="E-mail" leftIcon={<MdEmail />} name="email" errorMessage={errors?.email?.message} control={control} />
-                    <Input placeholder="name" leftIcon={<MdPerson />} name="name" errorMessage={errors.name && <span>E-mail é obrigatório</span>} control={control} />
-                    <Input type="password" placeholder="password" leftIcon={<MdLock />}  name="password" errorMessage={errors?.password?.message} control={control} />
+
+                    <Input placeholder="Nome" leftIcon={<MdPerson />} type="text" name="name" errorMessage={errors?.name?.message} control={control} />
+                    <Input placeholder="E-mail" leftIcon={<MdEmail />} name="email" errorMessage={errors?.email?.message} control={control}  />   
+                    <Input type="password" placeholder="Senha" leftIcon={<MdLock />}name="password" errorMessage={errors?.password?.message} control={control} />
                    
-                    <Button title="Criar minha conta" variant="secondary" onClick={handleClickSignIn}/>
+                    <Button title="Criar minha conta" variant="secondary" type= "submit" />
                 </form>
                 <Row>
                     <InfoText>
                         Ao clicar em "criar minha conta grátis",declaro que aceito as Políticas de Privacidade e os Termos de Uso da DIO.
                     </InfoText>
-                    <SingUpText>Já tenho conta. <TextBtn>Fazer login </TextBtn> </SingUpText>
+                    <SingUpText>Já tenho conta. <TextBtn href="/login">Fazer login </TextBtn> </SingUpText>
                 </Row>
                     
                 </Wrapper>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Container, NameText, Progress, UserPicture} from './styles';
+import { Container, NameText, Progress, UserPicture} from '../UserInfo/styles'
 
 const UserInfo = ({nome,image, percentual}) => {
   return (

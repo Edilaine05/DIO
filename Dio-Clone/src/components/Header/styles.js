@@ -39,7 +39,7 @@ export const BuscarInputContainer = styled.div`
 `
 
 export const Menu = styled.a`
-    font-family: 'Open Sans';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -49,7 +49,7 @@ export const Menu = styled.a`
 `
 
 export const MenuRight = styled.a`
-    font-family: 'Open Sans';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-size: 12px;
     line-height: 25px;

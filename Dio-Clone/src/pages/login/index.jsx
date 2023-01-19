@@ -10,7 +10,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
 
 
-import { Container, Title, Column, TitleLogin, SubtitleLogin, EsqueciText, CriarText, Row, Wrapper } from './styles';
+import { Container, Title, Column, TitleLogin, SubtitleLogin, EsqueciText, CriarText, Row, Wrapper } from '../login/styled';
 
 const schema = yup.object({
     email: yup.string().email('Email invalido').required('Campo obrigatório'),
@@ -68,7 +68,7 @@ const Login = () => {
                 </form>
                 <Row>
                     <EsqueciText>Esqueci minha password</EsqueciText>
-                    <CriarText to={"/sing"} onClick={handleClickSignUp}>Criar Conta</CriarText>
+                    <CriarText onClick={handleClickSignUp}>Criar Conta</CriarText>
                 </Row>
                 </Wrapper>
             </Column>

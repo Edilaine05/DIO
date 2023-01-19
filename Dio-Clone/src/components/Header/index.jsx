@@ -2,10 +2,19 @@ import React from 'react'
 import logo from '../../assets/logo-dio.png';
 
 import { Button } from '../Button';
+import { useNavigate  } from "react-router-dom";
 
 import { Container, Wrapper, BuscarInputContainer, Input, Row, Menu, MenuRight, UserPicture} from './styles';
 
+
 const Header = ({autenticado}) => {
+  const navigate = useNavigate();
+
+  const handleClickSignIn = () => {
+      navigate('/login')
+  }
+  const handleClickSignUp = () => {
+    navigate('/signup')}
   return (
     <Wrapper>
       <Container>
@@ -23,12 +32,12 @@ const Header = ({autenticado}) => {
           </Row>
           <Row>
               {autenticado ? (
-                <UserPicture src="https://avatars.githubusercontent.com/u/45184516?v=4"/>
+                <UserPicture src="https://avatars.githubusercontent.com/u/116959329?s=400&u=9ccb291482086be6bed8ecbf20e965a9949027d0&v=4"/>
               ) : (
               <>
                 <MenuRight href="/">Home</MenuRight>
-                <Button title="Entrar" />
-                <Button title="Cadastrar" />
+                <Button title="Entrar" onClick={handleClickSignIn}/>
+                <Button title="Cadastrar" onClick={handleClickSignUp} />
               </>)}
           </Row>
       </Container>
